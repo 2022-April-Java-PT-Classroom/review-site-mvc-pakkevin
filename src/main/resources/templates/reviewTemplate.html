@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Suggestion</title>
+</head>
+
+<body>
+<div class="container">
+    <div class=banner>
+        <img src="images\Banner.jpg" alt="CinemaFaces" class="theater">
+    </div>
+    <header class="header">
+        <h1 th:text="${reviewModel.title}" class="h1"></h1>
+    </header>
+
+    <main class="main">
+        <h3 th:text="${reviewModel.year}"></h3>
+        <h5 th:text="${reviewModel.director}"></h5>
+        <h2 class="ep__review"></h2>
+        <article class="genre">
+            <h3>Genre</h3>
+            <p th:text="${reviewModel.genre}"></p>
+        </article>
+        <img th:src="${reviewModel.urlPoster}" alt="poster" class="movie__poster__img">
+
+        <p><a href="/reviews">To Full List</a></p>
+    </main>
+
+    <footer class="footer">
+        <small>@kpak 2022</small>
+    </footer>
+</div>
+</body>
+
+</html>

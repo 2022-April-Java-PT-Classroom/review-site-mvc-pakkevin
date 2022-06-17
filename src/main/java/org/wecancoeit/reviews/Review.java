@@ -1,4 +1,4 @@
-package org.wecancoeit.reviews.model;
+package org.wecancoeit.reviews;
 
 public class Review {
 
@@ -48,3 +48,6 @@ public class Review {
         return urlStar;
     }
 }
+
+
+
