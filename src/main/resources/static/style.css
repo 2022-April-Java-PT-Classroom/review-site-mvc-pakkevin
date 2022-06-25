@@ -1,0 +1,123 @@
+*{
+    background-color: rgb(21, 52, 80);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: rgb(248,228,204);
+    font: 36px sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.618em;
+    text-align: center;
+}
+
+.theater {
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+   }
+
+.container {
+    background-color: rgb(41, 64, 82);
+    box-shadow: 7px 5px 32px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 5px 32px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 5px 32px -6px rgba(0,0,0,0.75);
+    margin: 2rem auto;
+    max-width: 60rem;
+    width: 90%;
+    
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+.footer {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.list__of__movies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.h1 {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.episode__image {
+    max-height: 400px;
+    max-width: 400px;
+    margin: 1rem;
+}
+
+.genre {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align:center;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .header {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+    }
+
+    .main {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+    
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    .poster__image__img {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .star__rating__img {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .footer {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+}

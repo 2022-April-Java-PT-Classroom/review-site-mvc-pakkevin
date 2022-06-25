@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html">
+    <link rel="stylesheet" href="style.css">
+    <title>Kevin's Movie List</title>
+</head>
+
+<body>
+<div class="container">
+    <div class=banner>
+        <img src="images\Banner.jpg" alt="Movie Banner" class="theater">
+    </div>
+    <header class="header">
+        <h1 class="h1">Welcome to Kevin's Movie List!</h1>
+        <h5 class="h5">don't rush to see. read no more. just watch em' and enjoy :)</h5>
+    </header>
+
+    <main class="main">
+        <section class="list__of__movies">
+            <article th:each="review: ${reviewsModel}">
+                <a th:href="@{/review(id=${review.id})}"><img th:src="${review.urlStar}" alt="ranking" class="star__rating__img"></a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <medium>@kpak 2022</medium>
+    </footer>
+</div>
+</body>
+
+</html>
